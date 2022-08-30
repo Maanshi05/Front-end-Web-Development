@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="home.html">Home</a>
+  <a href ="Sum.html" target="_blank">Login/Register</a>
+  <a href="about.html" target="_blank">About</a>
+  <a href="#contact">Contact</a>
+  <a href="form.html">Feedback</a>
+  
+</div>
+
+<div style="padding-left:16px">
+</div>
+<br>
+</br>
+<body style="background-color:#DDA0DD;">
+</body>
+<!-- Slide Show -->
+<section><center>
+  <img class="mySlides" src="E:\PaviDhana\Dhana\website\grapes crop.jpg"
+  style="width:55%">
+  <img class="mySlides" src="E:\PaviDhana\Dhana\website\pomengate crop.jpg"
+  style="width:50%">
+  <img class="mySlides" src="E:\PaviDhana\Dhana\website\mazie crop.jpg"
+  style="width:52%">
+  <img class="mySlides" src="E:\PaviDhana\Dhana\website\rice crop.jpg"
+  style="width:52%">
+</section>
+</center>
+
+<head>
+<h1><marquee behavior="scroll" direction="left" scrollamount="17" onmouseover="this.stop();" onmouseout="this.start();"><center><font color = "Black">WELCOME TO SMART CROP PREDICTION </center></marquee></h1>
+<p style="font-size:20px">
+<font color = "#F5F5DC">
+<font style = "Times New Roman">
+<center>
+<b>The goal of smart agriculture research is to ground a decision making support system for farm management.</b></center>
+</p>
+</head> 
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+
